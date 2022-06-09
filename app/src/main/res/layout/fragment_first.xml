@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controler.fragment.FirstFragment"
+    android:background="@color/Peach"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageview_first"
+        android:layout_width="389dp"
+        android:layout_height="368dp"
+        android:contentDescription="@string/imagens_aleatorias_fragment_first"
+        android:scaleType="centerCrop"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRefletir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contatos"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/imageview_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
